@@ -1,8 +1,12 @@
 import { useState } from 'react';
 import css from './ContactForm.module.css';
 import { useGetContactsQuery, useAddContactMutation } from 'redux/contactsApi';
+import { toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 const ContactForm = () => {
+  // const notify = () => toast('Wow so easy !');
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
 
@@ -31,9 +35,11 @@ const ContactForm = () => {
       phone: number,
     };
     if (haveContacts(values)) {
+      toast.success('This contact already exist !');
       reset();
       return;
     } else {
+      toast.info('You add new contact !');
       addContact(values);
     }
     reset();

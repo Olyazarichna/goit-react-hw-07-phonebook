@@ -15,6 +15,7 @@ const Filter = () => {
           onChange={event => dispatch(filterContact(event.target.value))}
           value={filter}
           className={css.findInput}
+          placeholder="Search"
         />
       </label>
     </form>

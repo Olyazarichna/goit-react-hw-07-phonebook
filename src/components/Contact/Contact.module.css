@@ -8,15 +8,15 @@
   padding-top: 5px;
 }
 .bthList {
-  /* margin-left: 20px; */
   background-color: #fff;
-  color: orange;
-  /* padding: 5px 10px; */
-  border: 1px solid orange;
+  color: rgb(255, 160, 8);
+
+  border: 1px solid #fff;
+  padding: 5px 10px;
 }
 .bthList:hover,
 .bthList:focus {
   cursor: pointer;
-  background-color: rgb(236, 82, 82);
+  background-color: rgb(255, 160, 8);
   color: #fff;
 }
