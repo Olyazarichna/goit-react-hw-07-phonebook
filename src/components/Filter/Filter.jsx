@@ -1,9 +1,9 @@
 import css from './Filter.module.css';
-import { filterContact } from 'redux/contactsSlice';
+import { filterContact } from 'redux/filterSlice';
 import { useSelector, useDispatch } from 'react-redux';
 
 const Filter = () => {
-  const filter = useSelector(state => state.contacts.filter);
+  const { filter } = useSelector(state => state.filter);
   const dispatch = useDispatch();
   return (
     <label className={css.findCont}>
