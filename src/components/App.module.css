@@ -1,0 +1,15 @@
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 600px;
+}
+.title {
+  color: rgba(255, 255, 255, 0.93);
+}

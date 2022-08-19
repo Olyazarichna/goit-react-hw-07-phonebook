@@ -1,19 +1,22 @@
 .listItem {
   font-size: 18px;
+  color: #fff;
   font-weight: 500;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  padding-top: 5px;
 }
 .bthList {
-  margin-left: 20px;
-  background-color: rgb(233, 41, 41);
-  color: #fff;
-  padding: 5px 10px;
-  border: 1px solid #fff;
+  /* margin-left: 20px; */
+  background-color: #fff;
+  color: orange;
+  /* padding: 5px 10px; */
+  border: 1px solid orange;
 }
 .bthList:hover,
-.bthList:focus{
-    cursor: pointer;
-    background-color: rgb(236, 82, 82);
+.bthList:focus {
+  cursor: pointer;
+  background-color: rgb(236, 82, 82);
+  color: #fff;
 }

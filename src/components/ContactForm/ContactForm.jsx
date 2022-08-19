@@ -1,10 +1,6 @@
 import { useState } from 'react';
 import css from './ContactForm.module.css';
-import {
-  useGetContactsQuery,
-  useAddContactMutation,
-  contactsApi,
-} from 'redux/contactsApi';
+import { useGetContactsQuery, useAddContactMutation } from 'redux/contactsApi';
 
 const ContactForm = () => {
   const [name, setName] = useState('');
@@ -35,7 +31,6 @@ const ContactForm = () => {
       phone: number,
     };
     if (haveContacts(values)) {
-      alert('exist');
       reset();
       return;
     } else {
@@ -62,6 +57,7 @@ const ContactForm = () => {
           value={name}
           onChange={handleChangeName}
           className={css.formInput}
+          placeholder="Enter name"
         />
       </label>
       <label>
@@ -75,6 +71,7 @@ const ContactForm = () => {
           value={number}
           onChange={handleChangeNumber}
           className={css.formInput}
+          placeholder="Enter phone number"
         />
       </label>
 
